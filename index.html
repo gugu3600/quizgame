@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+
+    <section class="menu">
+        <h1 class="menu-item">Welcome From Trivia Game</h1>
+        <div class="menu-item"><a href="#" class="menu-btn">Start Game</a></div>
+        <div class="menu-item"><a href="#" class="menu-btn">Setting</a></div>
+        <div class="menu-item"><a href="#" class="menu-btn">Credit</a></div>
+    </section>
+
+
+    <div class="choose container">
+            <div class="row">
+                <div class="col-md-12"><h2>Choose Your Trivia Title</h2></div>
+                <button type="button" class="backbtn">Back</button>
+                <div class="col-md-3 mb-4"><a href="#" class="genre-btn">Movies <i class="fas fa-video"></i></a></div>
+                <div class="col-md-3 mb-4"><a href="#"  class="genre-btn">DOTA 2</a></div>
+                <!--        <div><a href="#" class="genre-btn">Brand</a></div>-->
+    <!--        <div><a href="#" class="genre-btn">Music</a></div>-->
+    <!--        <div><a href="#" class="genre-btn">Games</a></div>-->
+<!--                <div class="col-md-3 mb-4"><a href="#" class="genre-btn">Country</a></div>-->
+    <!--        <div><a href="#" class="genre-btn">Math</a></div>-->
+    <!--        <div><a href="#" class="genre-btn">General Knowledge</a></div>-->
+    <!--        <div><a href="#" class="genre-btn">Sport</a></div>-->
+    <!--        <div><a href="#" class="genre-btn">Physic</a></div>-->
+    <!--        <div><a href="#" class="genre-btn">English</a></div>-->
+    <!--        <div><a href="#" class="genre-btn">Chemistry</a></div>-->
+    <!--        <div><a href="#" class="genre-btn">History</a></div>-->
+    <!--        <div><a href="#" class="genre-btn">Shuffle</a></div>-->
+        </div>
+    </div>
+
+    <div class="loading-screen" id="loading">
+        <div class="own-progress" id="load">
+            <div id="progress-bar" class="own-progress-bar" inc-numb="0"></div>
+        </div>
+    </div>
+
+    <div class="movies container">
+        <div class="list-group">
+            <div class="list-group-item movies-list">
+                <img src="https://cdn.shopify.com/s/files/1/1057/4964/products/The-Good-Bad-and-the-Ugly-Vintage-Movie-Poster-Original-French-1-panel-47x63-5052_800x.progressive.jpg?v=1663220736" style="width: 250px"/>
+                <h3>What is This Movie Name</h3>
+                    <p><button type="button" class="quest1 btn btn-secondary rounded-0">(A) Titanic</button></p>
+                    <p><button type="button" class="quest1 btn btn-secondary rounded-0 win">(B) The Good,The Bad And The Ugly</button></p>
+                    <p><button type="button" class="quest1 btn btn-secondary rounded-0">(C) Fistful Doller</button></p>
+                    <p><button type="button" class="quest1 btn btn-secondary rounded-0">(D) Deadpool</button></p>
+            </div>
+
+            <div class="list-group-item movies-list">
+                <img src="./img/movie/castiel.jpeg" alt="castiel" style="width: 300px"/>
+                <h3>In <b>Supernatural</b> TV Show who is he?</h3>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(A) Dean Winchester</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(B) Sam Winchester</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0 win">(C) Castiel</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(D) Crowley</button></p>
+            </div>
+
+            <div class="list-group-item movies-list">
+                <img src="./img/movie/gunther.jpeg" alt="gunther" style="width: 300px"/>
+                <h3>His Name is <b>Chandler Bing</b> from USA famous TV show <b>Friends</b></h3>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(A) True</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0 win">(B) False</button></p>
+            </div>
+
+            <div class="list-group-item movies-list">
+                <img src="./img/movie/dway.jpeg" alt="dway" style="width: 300px"/>
+                <h3>He is famous actor from which country?</h3>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0 win">(A) Myanmar</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(B) Philippines </button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(C) Thailand </button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(D) Brunei</button></p>
+            </div>
+            <div class="list-group-item movies-list">
+                <img src="img/movie/paulwalker.jpg" alt="paulwalker" style="width: 300px"/>
+                <h3><b>Paul Walker's</b> famous movie is</h3>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(A) Friends</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0 win">(B) Fast and Furious</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(C) Jumanji</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(D) Need For Speed</button></p>
+
+            </div>
+
+            <div class="list-group-item movies-list">
+                <img src="./img/movie/impala1967.jpg" alt="impala1967" style="width: 300px;"/>
+                <h3>This Car <b>Impala 1967</b> is famous car from which movie and who owned by</h3>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(A) Movie Peaky Blinder,Owned By Thomas Shelby</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(B) Movie The Great Gatsby,Owned By Mr.Gatsby</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(C) Movie Fast and Furious,Owned By Brian O'Conner</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0 win">(D) Movie Supernatural,Owned By Dean Winchester</button></p>
+            </div>
+
+            <div class="list-group-item movies-list">
+                <img src="./img/movie/mrniceguy.jpg" alt="mrniceguy" style="width: 300px"/>
+                <h3>Name of actor from <b>Mr.Nice Guy</b> movie is</h3>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(A) Leonardo DiCaprio</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(B) Jet Li</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0 win">(C) Jackie Chan</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(D) Jasen Ackles</button></p>
+
+            </div>
+
+            <div class="list-group-item movies-list">
+                <img src="img/movie/superman.png" alt="superman" style="width: 300px;">
+                <h3>Very first <b>Superman</b> movie release year is</h3>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(A) 2013</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(B) 1981</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(C) 2006</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0 win">(D) 1978</button></p>
+            </div>
+
+            <div class="list-group-item movies-list">
+                <img src="img/movie/protector.jpg" alt="protector" style="width: 300px">
+                <h3>This scene is from which movie series</h3>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(A) Harry Potter and Order of Phoenix</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(B) Narnia</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0 win">(C) The Protector</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(D) Ragnarok</button></p>
+            </div>
+
+            <div class="list-group-item movies-list">
+                <img src="./img/movie/myrtel.jpg" alt="myrtle" style="width: 300px;">
+                <h3>In Harry Potter movies which house is <b>Moaning Myrtle</b> from</h3>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(A) Hufflepuff</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(B) Slytherin</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(C) Gryffindor</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0 win">(D) Ravenclaw</button></p>
+            </div>
+
+            <div class="list-group-item movies-list">
+                <img src="./img/movie/bolton.png" alt="bolton-logo" style="width: 300px">
+                <h3>In <b>Game Of Throne Series</b> which house of logo is this?</h3>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(A) House Greyjoy</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(B) House Tyrell</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0 win">(C) House Bolton</button></p>
+                <p><button type="button" class="quest1 btn btn-secondary rounded-0">(D) House Baratheon</button></p>
+                <p hidden>C is correct answer</p>
+            </div>
+
+        </div>
+    </div>
+<!--    game container start-->
+        <div class="games container w-md-7 h-7">
+<!--game list gruop start-->
+            <div class="list-group">
+
+                <div class="list-group-item game-lists">
+                    <img src="./img/game/mortred.jpg" alt="phantom-assassin mortred" style="width: 300px"/>
+                    <h3>What is <b>Phantom Assassin's name</b> from DOTA1</h3>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0 win">(A) Mortred</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(B) Soulkeeper</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(C) Magina</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(D) Princess Of The Moon</button></p>
+                </div>
+
+                <div class="list-group-item game-lists">
+                    <img src="https://www.masterdota.com/themes/dotaholic/assets/crawled_images/skills/avatars/winter-wyvern-winters-curse-5654.jpg" alt="winter-curse" style="width: 300px"/>
+                    <h3><b>Winter Curse</b> duration is?</h3>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(A) 4s</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(B) 4s/4.5s/5s</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(C) 2s/3s/4s/5s</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0 win">(D) 4.5s/5s/5.5s</button></p>
+                    <p hidden>d is correct answer</p>
+                </div>
+
+                <div class="list-group-item game-lists">
+                    <img src="https://preview.redd.it/xk63i8yi4hy71.png?auto=webp&s=fbbb6694c92fe97ba891aa496f0ab7706b73edb8" alt="vanguard" style="width: 300px"/>
+                    <h3><b>Vanguard</b> cost is?</h3>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(A) 2225 <i class="fas fa-coins" style="color: gold"></i></button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0 win">(B) 1825 <i class="fas fa-coins" style="color: gold"></i></button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(C) 2030 <i class="fas fa-coins" style="color: gold"></i></button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(D) 1650 <i class="fas fa-coins" style="color: gold"></i></button></p>
+                    <p hidden>B is correct answer</p>
+                </div>
+
+                <div class="list-group-item game-lists">
+                    <img src="http://3.bp.blogspot.com/-xnniPu25BsY/UEmhMa1m6dI/AAAAAAAABY4/ofty4qLyRwE/s1600/Item_bottle_invisibility.jpg" alt="invis-rune" style="width: 300px"/>
+                    <h3><b>Invisible rune</b> duration is?</h3>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(A) 60s</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(B) 35s</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(C) 75s</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0 win">(D) 45s</button></p>
+                    <p hidden>d is correct answer</p>
+                </div>
+
+                <div class="list-group-item game-lists">
+                    <img src="https://www.giantbomb.com/a/uploads/original/13/134384/3162435-outpost.png" alt="outpost" style="width: 300px"/>
+                    <h3><b>Outpost</b> True Sight radius is 600?</h3>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(A) True</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0 win">(B) False</button></p>
+                    <p hidden>b is correct answer</p>
+                </div>
+
+                <div class="list-group-item game-lists">
+                    <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/b5/b5bd56c1aa4644a474a2e4972be27ef9e82e517e_full.jpg" alt="steam-profile-picture" style="width: 300px"/>
+                    <h3>___ is <b>the only person to play every single Dota 2 hero in professional matches.</b></h3>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(A)Amer "Miracle-" Barqawi</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(B)Clement "Puppey" Ivanov</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0 win">(C)Kuro "Kuroky" Takhasomi</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(D)Johan "Notail" Sundstein</button></p>
+                    <p hidden>c is correct answer</p>
+                </div>
+
+                <div class="list-group-item game-lists">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c46af526-3722-41fc-a0a5-7f7b0bd40cde/d8agdx6-0cf8df9a-4447-451b-bdb2-e903d4ca2174.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M0NmFmNTI2LTM3MjItNDFmYy1hMGE1LTdmN2IwYmQ0MGNkZVwvZDhhZ2R4Ni0wY2Y4ZGY5YS00NDQ3LTQ1MWItYmRiMi1lOTAzZDRjYTIxNzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pbwGk9E8nAWpMMF5sEvNSZVr5Z21ar9LlVZ1viVxZes" alt="intelligence-dota2" style="width: 300px"/>
+                    <h3>How Many <b>Intelligence Heroes</b> in Dota2?</h3>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(A)40</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(B)41</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(C)42</button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0 win">(D)43</button></p>
+                    <p hidden>d is correct answer</p>
+                </div>
+
+                <div class="list-group-item game-lists">
+                    <img src="./img/game/solarcrest.png" alt="solar-crest" style="width: 300px"/>
+                    <h3><b>Solar Crest</b> cost is?</h3>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0 win">(A) 2625<i class="fas fa-coins" style="color: gold"></i></button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(B) 2420 <i class="fas fa-coins" style="color: gold"></i></button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(C) 1870 <i class="fas fa-coins" style="color: gold"></i></button></p>
+                    <p><button type="button" class="quest2 btn btn-secondary rounded-0">(D) 2700 <i class="fas fa-coins" style="color: gold"></i></button></p>
+                    <p hidden>A is correct answer</p>
+                </div>
+
+            </div>
+<!--            game list group end-->
+        </div>
+<!--    game container end-->
+
+<!--    score container start-->
+    <div class="score-box">
+        <div class="score-box-item">
+            <h3 title="Congratulation">Congratulation</h3>
+            <h4 id="scoreval" score="0"></h4>
+            <button type="button" class="score-btn home-btn"><i class="fas fa-home"></i></button>
+            <button type="button" class="score-btn category-btn"><i class="fas fa-list"></i></button>
+            <div class="box">
+                <h4 class="thanks">Thank You For Playing My Game</h4>
+            </div>
+        </div>
+    </div>
+<!--    score container end-->
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+body{
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+    background-color: sandybrown;
+
+    text-align: center;
+    position: relative;
+    /*display: none;*/
+}
+
+.menu-item{
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+
+.menu-btn{
+    text-decoration: none;
+    background-color: saddlebrown;
+    color: silver;
+    padding: 14px 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.menu-btn:hover{
+    color: white;
+    opacity: 0.9;
+}
+
+.loading-screen{
+    width: 100%;
+    height: 100%;
+    background-color: sandybrown;
+
+    text-align: center;
+
+    display: none;
+    cursor: progress;
+}
+
+.own-progress{
+    width: 600px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.5);
+    /*background-color: #ddd;*/
+    position: absolute;
+    left: 50%;
+    top:50%;
+
+    transform: translate(-50%,-50%);
+    cursor: progress;
+
+}
+
+.own-progress-bar{
+    width: 0;
+    height: 100%;
+    background-color: saddlebrown;
+    border-radius:5px;
+
+    position: relative;
+    cursor: progress;
+
+    overflow: hidden;
+}
+
+.own-progress-bar::before{
+    content: attr(inc-numb);
+
+    width: 100%;
+    height: 100%;
+    color: lightsteelblue;
+
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+}
+
+
+
+.choose{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color:lightsteelblue;
+    text-align: center;
+
+    position: relative;
+
+}
+
+h2{
+    margin-bottom: 50px;
+}
+
+.backbtn{
+    width: 60px;
+    height: 40px;
+    background-color: saddlebrown;
+    color: silver;
+    text-align: center;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    border: none;
+    font-weight: bold;
+
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.genre-btn{
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: saddlebrown;
+    color: rgba(255,255,255,0.7);
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.genre-btn:hover{
+    color: rgba(255,255,255,1);
+}
+
+.movies,.games{
+    width: 800px;
+    display: none;
+    background: linear-gradient(47deg,pink,saddlebrown,sandybrown,green,red,yellow,blue,wheat,orange,blue,yellow,red,green,sandybrown,saddlebrown,pink);
+    background-size: 400px;
+    padding: 20px;
+    margin: 20px;
+
+    text-align: center;
+
+    animation-name: lighting;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lighting {
+
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: 300% 0;
+    }
+
+    100%{
+        background-position: 0 0;
+    }
+}
+
+
+
+
+
+.list-group .list-group-item{
+    width: 100%;
+    margin: auto;
+    background-color: lightseagreen;
+    text-align: center;
+    display: none;
+
+}
+
+.score-box{
+    width: 800px;
+    height: 600px;
+
+    /*display: flex;*/
+    justify-content: center;
+
+    display: none;
+}
+
+.score-box-item{
+    padding: 20px;
+    text-align: center;
+    background-color: saddlebrown;
+    color: gold;
+}
+
+ .score-box-item h3{
+     color: transparent;
+     /*font-size: 50px;*/
+     text-transform: uppercase;
+     letter-spacing: 10px;
+
+     /*-webkit-text-stroke:2px;
+     -webkit-text-stroke-color:red;*/
+
+     -webkit-text-stroke:1px transparent;
+
+     white-space: nowrap;
+
+     position: relative;
+}
+
+ .score-box-item h3::before{
+     content: attr(title);
+     width: 0;
+     color: gold;
+     border-right: 1px solid goldenrod;
+
+     position: absolute;
+     left: 12px;
+     top: 0;
+
+     overflow: hidden;
+
+     animation-name: textmove;
+     animation-duration: 20s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+}
+
+@keyframes textmove{
+
+    0%{
+        width: 0;
+    }
+
+    50%{
+        width: 100%;
+    }
+
+    100%{
+        width: 0;
+    }
+}
+
+.score-btn{
+
+    background:none;
+    border: none;
+    font-size: 2rem;
+    opacity: 0.9;
+    color: greenyellow;
+    padding: 20px;
+    margin-top: 40%;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.score-btn:hover{
+    opacity: 1;
+}
+
+
+
+.box .thanks{
+    font-family: sans-serif;
+    color: gold;
+    /*margin-top: 40px;*/
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+
+    white-space: nowrap;
+}
+
